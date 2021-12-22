@@ -29,6 +29,10 @@ The advantages of using the DAO pattern for your application include:
 ## Code Example
 The project in this repository implements a very basic contact list that supports two of the CRUD operations.  It allows you to see all of the contacts in the contacts table (Read) and it allows you to add a contact to the table (Create).  The DTO, Contact.php, and the DAO, ContactDAO.php are in the model directory. There are two different versions of the application.  One with the contact listing and add form on the same page, *index.php*. The other version has the listing on one page, *listContacts.php*, and the form on another page, *addContact.php*.
 
+To add the database and tables to your local MySQL server, run the following from the root of the repository:
+```
+sudo ./mysql < contacts.sql
+```
 
 Click on the link to run Version 1 on the Boole Server, https://boole.cs.uafs.edu/patternDAO
 
