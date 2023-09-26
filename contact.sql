@@ -1,4 +1,8 @@
+create database cs2033;
 use cs2033;
+
+create user 'cs2033user'@'localhost' identified by 'cs2033pass';
+grant all on cs2033.* to 'cs2033user'@'localhost';
 
 create table contacts(
    contactID int AUTO_INCREMENT,

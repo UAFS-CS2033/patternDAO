@@ -31,16 +31,14 @@ The project in this repository implements a very basic contact list that support
 
 To add the database and tables to your local MySQL server, run the following from the root of the repository:
 ```
-sudo ./mysql < contacts.sql
+sudo mysql < contacts.sql
 ```
 
-Click on the link to run Version 1 on the Boole Server, https://boole.cs.uafs.edu/patternDAO
 
 #### index.php
 <img src="images/patternDAOss1.png" alt="Screenshot">
 
 
-Click on the link to run Version 2 on the Boole Server, https://boole.cs.uafs.edu/patternDAO/listContacts.php
 
 #### listContacts.php
 <img src="images/daoss2.png" alt="Screenshot 2">
