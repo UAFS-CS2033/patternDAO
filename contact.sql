@@ -1,3 +1,5 @@
+drop database if exists cs2033;
+drop user if exists 'cs2033user'@'localhost';
 create database cs2033;
 use cs2033;
 
