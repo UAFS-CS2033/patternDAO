@@ -1,5 +1,5 @@
 <?php
-    require 'model/ContactDAO.php';
+    require_once 'model/ContactDAO.php';
 
     $contactDAO = new ContactDAO();
     $contacts=$contactDAO->getContacts();

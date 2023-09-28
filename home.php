@@ -1,14 +1,14 @@
 <?php
-    require 'model/ContactDAO.php';
+    require_once 'model/ContactDAO.php';
 
     $contactDAO = new ContactDAO();
     $method=$_SERVER['REQUEST_METHOD'];
     if($method=='POST'){
         $username = $_POST['username'];
-	$email = $_POST['email'];
-	$contact = new Contact();
-	$contact->setUsername($username);
-	$contact->setEmail($email);
+        $email = $_POST['email'];
+        $contact = new Contact();
+        $contact->setUsername($username);
+        $contact->setEmail($email);
         $contactDAO->addContact($contact);
         header('Location: home.php');
         exit;        
