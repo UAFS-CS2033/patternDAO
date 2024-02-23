@@ -1,29 +1,3 @@
-<?php
-    require_once 'model/ContactDAO.php';
-
-    showErrors(0);
-
-    $contactDAO = new ContactDAO();
-    $method=$_SERVER['REQUEST_METHOD'];
-    if($method=='POST'){
-        $username = $_POST['username'];
-	    $email = $_POST['email'];
-	    $contact = new Contact();
-	    $contact->setUsername($username);
-	    $contact->setEmail($email);
-        $contactDAO->addContact($contact);
-        header('Location: listContacts.php');
-        exit;        
-    }
-
-    function showErrors($debug){
-        if($debug==1){
-            ini_set('display_errors', 1);
-            ini_set('display_startup_errors', 1);
-            error_reporting(E_ALL);
-        }
-    }
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -49,7 +23,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Mailing List</h5>
                         <p class="card-text">Add a new contact to the list.</p>
-                        <form action="addContact.php" method="POST">
+                        <form action="processContactForm.php" method="POST">
                             <label for="username" class="form-label">Username</label>
                             <input type="text" class="form-control mb-3" id="username" name="username" placeholder="Enter your Username" required>
                             <label for="email" class="form-label">Email</label>

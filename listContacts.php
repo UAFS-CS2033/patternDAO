@@ -1,8 +1,18 @@
 <?php
     require_once 'model/ContactDAO.php';
 
+    showErrors(0);
+    
     $contactDAO = new ContactDAO();
     $contacts=$contactDAO->getContacts();
+
+    function showErrors($debug){
+        if($debug==1){
+            ini_set('display_errors', 1);
+            ini_set('display_startup_errors', 1);
+            error_reporting(E_ALL);
+        }
+    }
 ?>
 <!doctype html>
 <html lang="en">

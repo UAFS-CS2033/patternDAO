@@ -8,7 +8,7 @@ grant all on cs2033.* to 'cs2033user'@'localhost';
 
 create table contacts(
    contactID int AUTO_INCREMENT,
-   username varchar(15),
+   username varchar(50),
    email varchar(120),
    primary key(contactID)
 )engine=innodb;
