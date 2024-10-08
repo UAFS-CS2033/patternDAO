@@ -23,7 +23,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Mailing List</h5>
                         <p class="card-text">Add a new contact to the list.</p>
-                        <form action="processContactForm.php" method="POST">
+                        <form action="contactController.php" method="POST">
                             <label for="username" class="form-label">Username</label>
                             <input type="text" class="form-control mb-3" id="username" name="username" placeholder="Enter your Username" required>
                             <label for="email" class="form-label">Email</label>

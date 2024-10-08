@@ -13,8 +13,8 @@ create table contacts(
    primary key(contactID)
 )engine=innodb;
 
-insert into contacts(username,email) values('jsmith','jim.smith@gmail.com');
-insert into contacts(username,email) values('mjones','mjones@gmail.com');
-insert into contacts(username,email) values('rwilson','rick.wilson@gmail.com');
-insert into contacts(username,email) values('kjohnson','kjohnson@gmail.com');
-insert into contacts(username,email) values('bwilliams','bwilliams@gmail.com');
+insert into contacts(username,email) values('Jim Smith','jim.smith@gmail.com');
+insert into contacts(username,email) values('Mary Jones','mjones@gmail.com');
+insert into contacts(username,email) values('Rick Wilson','rick.wilson@gmail.com');
+insert into contacts(username,email) values('Kim Johnson','kjohnson@gmail.com');
+insert into contacts(username,email) values('Brian Williams','bwilliams@gmail.com');

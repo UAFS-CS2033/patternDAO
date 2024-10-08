@@ -7,8 +7,8 @@
         $username = $_POST['username'];
         $email = $_POST['email'];
         $contact = new Contact();
-        $contact->setUsername($username);
-        $contact->setEmail($email);
+        $contact->username=$username;
+        $contact->email=$email;
         $contactDAO->addContact($contact);
         header('Location: home.php');
         exit;        
@@ -41,9 +41,9 @@
                 <tbody>
                     <?php
                         for($index=0;$index<count($contacts);$index++){
-                            echo "<tr><td>".$contacts[$index]->getContactID()."</td><td>"
-                                    .$contacts[$index]->getUsername()."</td><td>"
-                                    .$contacts[$index]->getEmail()."</td></tr>";
+                            echo "<tr><td>".$contacts[$index]->contactID."</td><td>"
+                                    .$contacts[$index]->username."</td><td>"
+                                    .$contacts[$index]->email."</td></tr>";
                         }
                     ?>
                 </tbody>        

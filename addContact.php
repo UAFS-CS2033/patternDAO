@@ -9,8 +9,8 @@
         $username = $_POST['username'];
 	    $email = $_POST['email'];
 	    $contact = new Contact();
-	    $contact->setUsername($username);
-	    $contact->setEmail($email);
+	    $contact->username=$username;
+	    $contact->email=$email;
         $contactDAO->addContact($contact);
         header('Location: listContacts.php');
         exit;        

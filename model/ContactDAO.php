@@ -15,7 +15,7 @@
         public function addContact($contact){
             $connection=$this->getConnection();
             $stmt = $connection->prepare("INSERT INTO contacts (username, email) VALUES (?, ?)");
-            $stmt->bind_param("ss", $contact->getUsername(), $contact->getEmail());
+            $stmt->bind_param("ss", $contact->username, $contact->email);
             $stmt->execute();
             $stmt->close();
             $connection->close();

@@ -36,13 +36,13 @@
         <div class="col">
         <a class="btn btn-primary" href="addContact.php" role="button">Add Contact</a>
             <table class="table table-bordered table-striped">
-                <thead><tr><th>Contact ID</th><th>User Name</th><th>Email</th></tr></thead>
+                <thead><tr><th>Contact ID</th><th>Contact Name</th><th>Email</th></tr></thead>
                 <tbody>
                     <?php
                         for($index=0;$index<count($contacts);$index++){
-                            echo "<tr><td>".$contacts[$index]->getContactID()."</td><td>"
-                                    .$contacts[$index]->getUsername()."</td><td>"
-                                    .$contacts[$index]->getEmail()."</td></tr>";
+                            echo "<tr><td>".$contacts[$index]->contactID."</td><td>"
+                                    .$contacts[$index]->username."</td><td>"
+                                    .$contacts[$index]->email."</td></tr>";
                         }
                     ?>
                 </tbody>        
